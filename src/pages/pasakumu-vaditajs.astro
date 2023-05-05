@@ -1,0 +1,75 @@
+---
+import "~styles/style.scss";
+import Layout from "../components/Layout/Layout";
+import Hero from "../components/Hero/Hero";
+import { t, changeLanguage } from "i18next";
+
+// import ArticleCard from "../components/article-card/ArticleCard";
+// import Reviews from "../components/reviews/Reviews";
+// import Button from "../components/button/Button";
+import heroImage from "../images/pasakuma-vaditajs-hero-2021.jpg";
+// import firstArticleImage from "../images/DTA.jpeg";
+// import secondArticleImage from "../images/eventIgnition.jpg";
+// import thirdArticleImage from "../images/event-inovuss.jpg";
+// import firstReviewImage from "../images/elita-apine.jpg";
+// import secondReviewImage from "../images/santa-zunda.jpg";
+
+changeLanguage("lv");
+
+const heroInfo = {
+  subtitle: t("index.Home_Hero_Subtitle"),
+  title: t("index.Home_Hero_Title"),
+  content: t("index.Home_Hero_Content"),
+  heroTitle: t("index.Hero_title"),
+  heroPhone: t("index.Hero_Phone"),
+  heroEmail: t("index.Hero_Emai"),
+  heroMessengerPageUrl: t("index.Hero_Messenger_Page_Url"),
+  arrowTitle: t("index.Arrow_Title"),
+  anchorName: t("index.Anchor_Name"),
+};
+const footerInfo = {
+  title: t("index.Footer_Title_Index"),
+  phone: t("index.Footer_Phone_Index"),
+  email: t("index.Footer_Email_Index"),
+  fbLink: t("index.Footer_FbLink_Index"),
+  fbInLink: t("index.Footer_InLink_Index"),
+};
+const activitiesAlt = {
+  event: t("index.Event_Image_Alt"),
+  moderator: t("index.Moderator_Image_Alt"),
+  radio: t("index.Radio_Image_Alt"),
+};
+const activitiesContent = {
+  organiser: t("index.Organiser_title"),
+  moderator: t("index.Moderator_title"),
+  radio: t("index.Radio_title"),
+};
+---
+
+<Layout footerInfo={footerInfo} headerInfo={"/pasakumu-vaditajs"}>
+  {t("index.Footer_Title_Index")}
+  <div className="page page--wedding">
+    <Hero
+      type="wedding"
+      info={heroInfo}
+      image={"assets/images/pasakuma-vaditajs-hero-2021.jpg"}
+    />
+    <!-- 
+    <div className="page__articles">
+      <ArticleCard article={articles} imagesAlt={articlesImagesAlt} />
+    </div>
+    <div className="page__reviews">
+      <div className="page__reviews-btn">
+        <div className="wrapper">
+          <Button
+            title={reviewFbBtn.title}
+            link={reviewFbBtn.link}
+            target={reviewFbBtn.target}
+            btnClass={reviewFbBtn.class}
+            icon={reviewFbBtn.icon}
+          />
+        </div>
+      </div>
+    </div> -->
+  </div>
+</Layout>
