@@ -1,22 +1,13 @@
 ---
 import "~styles/style.scss";
 import Layout from "../../components/Layout/Layout";
-// import Hero from "../../components/Hero/Hero.astro";
+import Hero from "../../components/Hero/Hero";
 import { t, changeLanguage } from "i18next";
+import ArticleCard from "../../components/ArticleCard/ArticleCard";
+import Button from "../../components/Button/Button";
 
 changeLanguage("en");
 
-const heroInfo = {
-    subtitle: t("index.Home_Hero_Subtitle"),
-    title: t("index.Home_Hero_Title"),
-    content: t("index.Home_Hero_Content"),
-    heroTitle: t("index.Hero_title"),
-    heroPhone: t("index.Hero_Phone"),
-    heroEmail: t("index.Hero_Emai"),
-    heroMessengerPageUrl: t("index.Hero_Messenger_Page_Url"),
-    arrowTitle: t("index.Arrow_Title"),
-    anchorName: t("index.Anchor_Name"),
-};
 const footerInfo = {
     title: t("index.Footer_Title_Index"),
     phone: t("index.Footer_Phone_Index"),
@@ -24,30 +15,59 @@ const footerInfo = {
     fbLink: t("index.Footer_FbLink_Index"),
     fbInLink: t("index.Footer_InLink_Index"),
 };
-const activitiesAlt = {
-    event: t("index.Event_Image_Alt"),
-    moderator: t("index.Moderator_Image_Alt"),
-    radio: t("index.Radio_Image_Alt"),
+const reviewFbBtn = {
+    title: t("index.Review_FaceBook_Button_Title"),
+    target: "_blank",
+    link: "https://www.facebook.com/artis.ozolins/friends?lst=100000075771612%3A1421011988%3A1560273788&source_ref=pb_friends_tl",
+    class: "button--fb",
+    icon: "fb-icon",
 };
-const activitiesContent = {
-    organiser: t("index.Organiser_title"),
-    moderator: t("index.Moderator_title"),
-    radio: t("index.Radio_title"),
+const articlesImagesAlt = [
+    t("radio.Article_1_Image_Alt"),
+    t("radio.Article_2_Image_Alt"),
+];
+const heroInfo = {
+    subtitle: t("radio.Radio_Hero_Subtitle"),
+    title: t("radio.Radio_Hero_Title"),
+    content: t("radio.Radio_Hero_Content"),
+    heroTitle: t("radio.Hero_title"),
+    heroPhone: t("radio.Hero_Phone"),
+    heroEmail: t("radio.Hero_Emai"),
+    heroMessengerPageUrl: t("radio.Hero_Messenger_Page_Url"),
+    background: t("radio.Background_Image_Alt"),
+    arrowTitle: t("radio.Arrow_Title"),
+    homeIconHref: t("index.Home_Icon_Href"),
 };
+const articles = [
+    {
+        item: "/assets/images/DTA.jpeg",
+        type: "image",
+        title: t("radio.Article_1_Title"),
+        content: t("radio.Article_1_Content"),
+    },
+    {
+        item: "/assets/images/eventIgnition.jpg",
+        type: "image",
+        title: t("radio.Article_2_Title"),
+        content: t("radio.Article_2_Content"),
+    },
+];
 ---
 
 <Layout footerInfo={footerInfo} headerInfo={"/radio-personiba"}>
-  {t("index.Footer_Title_Index")}
-  {
-    /* <div className="page page--wedding">
-    <Hero type="wedding" info={heroInfo} image={heroImage} />
+  <div class="page page--wedding">
+    <Hero
+      type="wedding"
+      info={heroInfo}
+      image={"/assets/images/radioHomePage.jpg"}
+    />
 
-    <div className="page__articles">
+    <div class="page__articles">
       <ArticleCard article={articles} imagesAlt={articlesImagesAlt} />
     </div>
-    <div className="page__reviews">
-      <div className="page__reviews-btn">
-        <div className="wrapper">
+    <div class="page__reviews">
+      <div class="page__reviews-btn">
+        <div class="wrapper">
           <Button
             title={reviewFbBtn.title}
             link={reviewFbBtn.link}
@@ -58,6 +78,5 @@ const activitiesContent = {
         </div>
       </div>
     </div>
-  </div> */
-  }
+  </div>
 </Layout>

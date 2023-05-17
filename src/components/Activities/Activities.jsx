@@ -1,5 +1,4 @@
 import React from "preact";
-import patternSvg from "../../images/pattern-round-blade.svg";
 
 const OverviewBlock = ({ title, content, activitiesAlt, anchorName, urls }) => {
   const { event, moderator, radio } = activitiesAlt;
@@ -20,12 +19,12 @@ const OverviewBlock = ({ title, content, activitiesAlt, anchorName, urls }) => {
             >
               <img
                 className="activities__image-blade"
-                src={patternSvg}
+                src={"/assets/images/svg/pattern-round-blade.svg"}
                 alt="Svg pattern - grey circle"
               />
               <div className={`activities__image-tag pasakumu-vaditajs`}>
                 <img
-                  src="assets/images/pasakuma-vaditajs-hero.jpg"
+                  src="/assets/images/pasakuma-vaditajs-hero.jpg"
                   alt={event}
                   placeholder="blurred"
                 />
@@ -44,12 +43,12 @@ const OverviewBlock = ({ title, content, activitiesAlt, anchorName, urls }) => {
             >
               <img
                 className="activities__image-blade"
-                src={patternSvg}
+                src={"/assets/images/svg/pattern-round-blade.svg"}
                 alt="Svg pattern - grey circle"
               />
               <div className={`activities__image-tag diskusiju-moderators`}>
                 <img
-                  src="assets/images/moderators.jpg"
+                  src="/assets/images/moderators.jpg"
                   alt={moderator}
                   placeholder="blurred"
                 />
@@ -68,12 +67,12 @@ const OverviewBlock = ({ title, content, activitiesAlt, anchorName, urls }) => {
             >
               <img
                 className="activities__image-blade"
-                src={patternSvg}
+                src={"/assets/images/svg/pattern-round-blade.svg"}
                 alt="Svg pattern - grey circle"
               />
               <div className={`activities__image-tag radio-personiba`}>
                 <img
-                  src="assets/images/radioHomePage.jpg"
+                  src="/assets/images/radioHomePage.jpg"
                   alt={radio}
                   placeholder="blurred"
                 />

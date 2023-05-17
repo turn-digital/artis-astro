@@ -3,76 +3,71 @@ import "~styles/style.scss";
 import Layout from "../components/Layout/Layout";
 import Hero from "../components/Hero/Hero";
 import { t, changeLanguage } from "i18next";
-
 import ArticleCard from "../components/ArticleCard/ArticleCard";
-import Button from "../components/button/Button";
-import heroImage from "assets/images/radioHomePage.jpg";
-import firstArticleImage from "assets/images/DigitalasBrokastis.jpeg";
-import secondArticleImage from "assets/images/RadioNaba.jpeg";
+import Button from "../components/Button/Button";
 
 changeLanguage("lv");
 
-const heroInfo = {
-  subtitle: t("Radio_Hero_Subtitle"),
-  title: t("Radio_Hero_Title"),
-  content: t("Radio_Hero_Content"),
-  heroTitle: t("Hero_title"),
-  heroPhone: t("Hero_Phone"),
-  heroEmail: t("Hero_Emai"),
-  heroMessengerPageUrl: t("Hero_Messenger_Page_Url"),
-  background: t("Background_Image_Alt"),
-  arrowTitle: t("Arrow_Title"),
-  anchorName: t("Anchor_Name"),
-};
-
-const articles = [
-  {
-    item: "assets/images/DigitalasBrokastis.jpeg",
-    type: "image",
-    title: t("Article_1_Title"),
-    content: t("Article_1_Content"),
-  },
-  {
-    item: "assets/images/RadioNaba.jpeg",
-    type: "image",
-    title: t("Article_2_Title"),
-    content: t("Article_2_Content"),
-  },
-];
-
 const footerInfo = {
-  title: t("Footer_Title_Index"),
-  phone: t("Footer_Phone_Index"),
-  email: t("Footer_Email_Index"),
-  fbLink: t("Footer_FbLink_Index"),
-  fbInLink: t("Footer_InLink_Index"),
+    title: t("index.Footer_Title_Index"),
+    phone: t("index.Footer_Phone_Index"),
+    email: t("index.Footer_Email_Index"),
+    fbLink: t("index.Footer_FbLink_Index"),
+    fbInLink: t("index.Footer_InLink_Index"),
 };
-
 const reviewFbBtn = {
-  title: t("Review_FaceBook_Button_Title"),
-  target: "_blank",
-  link: "https://www.facebook.com/artis.ozolins/friends?lst=100000075771612%3A1421011988%3A1560273788&source_ref=pb_friends_tl",
-  class: "button--fb",
-  icon: "fb-icon",
+    title: t("index.Review_FaceBook_Button_Title"),
+    target: "_blank",
+    link: "https://www.facebook.com/artis.ozolins/friends?lst=100000075771612%3A1421011988%3A1560273788&source_ref=pb_friends_tl",
+    class: "button--fb",
+    icon: "fb-icon",
 };
-
-const articlesImagesAlt = [t("Article_1_Image_Alt"), t("Article_2_Image_Alt")];
+const articlesImagesAlt = [
+    t("radio.Article_1_Image_Alt"),
+    t("radio.Article_2_Image_Alt"),
+];
+const heroInfo = {
+    subtitle: t("radio.Radio_Hero_Subtitle"),
+    title: t("radio.Radio_Hero_Title"),
+    content: t("radio.Radio_Hero_Content"),
+    heroTitle: t("radio.Hero_title"),
+    heroPhone: t("radio.Hero_Phone"),
+    heroEmail: t("radio.Hero_Emai"),
+    heroMessengerPageUrl: t("radio.Hero_Messenger_Page_Url"),
+    background: t("radio.Background_Image_Alt"),
+    arrowTitle: t("radio.Arrow_Title"),
+    homeIconHref: t("index.Home_Icon_Href"),
+};
+const articles = [
+    {
+        item: "/assets/images/DTA.jpeg",
+        type: "image",
+        title: t("radio.Article_1_Title"),
+        content: t("radio.Article_1_Content"),
+    },
+    {
+        item: "/assets/images/eventIgnition.jpg",
+        type: "image",
+        title: t("radio.Article_2_Title"),
+        content: t("radio.Article_2_Content"),
+    },
+];
 ---
 
 <Layout footerInfo={footerInfo} headerInfo={"/radio-personiba"}>
-  <div className="page page--wedding">
+  <div class="page page--wedding">
     <Hero
       type="wedding"
       info={heroInfo}
-      image={"assets/images/radioHomePage.jpg"}
+      image={"/assets/images/radioHomePage.jpg"}
     />
 
-    <div className="page__articles">
+    <div class="page__articles">
       <ArticleCard article={articles} imagesAlt={articlesImagesAlt} />
     </div>
-    <div className="page__reviews">
-      <div className="page__reviews-btn">
-        <div className="wrapper">
+    <div class="page__reviews">
+      <div class="page__reviews-btn">
+        <div class="wrapper">
           <Button
             title={reviewFbBtn.title}
             link={reviewFbBtn.link}

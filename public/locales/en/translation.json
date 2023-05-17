@@ -7,6 +7,7 @@
     "Meta_Url": "https://www.artisozolins.lv",
     "Twitter_Author": "Artis Ozolins",
     "Arrow_Title": "Get in touch",
+    "Home_Icon_Href": "/en/#field-of-work",
     "Anchor_Name": "field-of-work",
 
     "Home_Hero_Title": "Artis Ozolins",
@@ -37,9 +38,9 @@
 
     "Review_FaceBook_Button_Title": "Ask for a reference from a friend",
 
-    "Pasakumu_Url": "/en/pasakumu_vaditajs",
+    "Pasakumu_Url": "/en/pasakumu-vaditajs",
     "Moderator_Url": "/en/diskusiju-moderators",
-    "Radio_Url": "/en/radio_personiba"
+    "Radio_Url": "/en/radio-personiba"
   },
   "moderator": {
     "Page_Name_For_Title": "Discussion Moderator",

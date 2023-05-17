@@ -7,6 +7,7 @@
     "Meta_Url": "https://www.artisozolins.lv",
     "Twitter_Author": "Artis Ozoliņš",
     "Arrow_Title": "Sazinies ar mani!",
+    "Home_Icon_Href": "/#darbibas-jomas",
     "Anchor_Name": "darbibas-jomas",
 
     "Home_Hero_Title": "Artis Ozoliņš",
@@ -37,9 +38,9 @@
 
     "Review_FaceBook_Button_Title": "Pajautāt atsauksmi kopīgam draugam",
 
-    "Pasakumu_Url": "/pasakumu_vaditajs",
+    "Pasakumu_Url": "/pasakumu-vaditajs",
     "Moderator_Url": "/diskusiju-moderators",
-    "Radio_Url": "/radio_personiba"
+    "Radio_Url": "/radio-personiba"
   },
   "moderator": {
     "Page_Name_For_Title": "Moderators",

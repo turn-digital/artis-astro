@@ -1,6 +1,5 @@
 import React from "preact";
 import SimpleSlider from "../SliderSimple/SliderSimple";
-import patternLine from "../../images/pattern-line.svg";
 
 const ArticleAuthor = (props) => {
   const author = props.author;
@@ -36,7 +35,10 @@ const ArticleImage = (props) => {
           {content.title}
           <span>
             <picture>
-              <img src={patternLine} alt="Pattern line" />
+              <img
+                src={"/assets/images/svg/pattern-line.svg"}
+                alt="Pattern line"
+              />
             </picture>
           </span>
         </h3>

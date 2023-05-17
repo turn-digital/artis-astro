@@ -5,7 +5,7 @@ import HomeIcon from "../Icon/HomeIcon";
 const Hero = ({ type, info, image }) => {
   return type === "home" ? (
     <div className="hero">
-      <HomeIcon anchorName={info.anchorName} />
+      <HomeIcon homeIconHref={info.homeIconHref} />
       <div className="hero__box">
         {info.desc !== "" && <InfoTool content={info} />}
         <div className="wrapper">
@@ -36,7 +36,7 @@ const Hero = ({ type, info, image }) => {
         ></img>
       </picture> */}
 
-      <HomeIcon anchorName={info.anchorName} />
+      <HomeIcon homeIconHref={info.homeIconHref} />
       <div className="hero__box">
         {info.desc !== "" && <InfoTool content={info} />}
         <div className="wrapper">
