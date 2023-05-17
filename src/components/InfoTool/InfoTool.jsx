@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "preact/hooks";
-import IconMessenger from "../icon/MessengerIcon";
+import IconMessenger from "../Icon/MessengerIcon";
 
 const InfoTool = (props) => {
   const [popupVisible, setPopupVisible] = useState(false);
