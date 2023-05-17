@@ -1,5 +1,4 @@
 import React from "preact";
-import SimpleSlider from "../SliderSimple/SliderSimple";
 
 const ArticleAuthor = (props) => {
   const author = props.author;
@@ -86,7 +85,7 @@ const ArticleSlider = (props) => {
   return (
     <div className="article-card__video">
       <div className="article-card__col">
-        <SimpleSlider className="article-card__slider" slide={fileFormat} />
+        {/* <SimpleSlider className="article-card__slider" slide={fileFormat} /> */}
         <p className="article-card__author">Foto: {content.author}</p>
       </div>
       <div className="article-card__col">
@@ -127,9 +126,11 @@ const ArticleCard = (props) => {
         />
       );
     } else if (attachment === "video") {
-      return <ArticleVideo fileFormat={fileFormat} content={content} />;
+      // return <ArticleVideo fileFormat={fileFormat} content={content} />;
+      <></>;
     } else if (attachment === "slider") {
-      return <ArticleSlider fileFormat={fileFormat} content={content} />;
+      <></>;
+      // return <ArticleSlider fileFormat={fileFormat} content={content} />;
     }
   };
 
