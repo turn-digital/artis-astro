@@ -1,7 +1,7 @@
 ---
 import "~styles/style.scss";
 import Layout from "../../components/Layout/Layout";
-import Hero from "../../components/Hero/Hero";
+import Hero from "../../components/Hero/Hero.astro";
 import Overview from "../../components/Overview/Overview";
 import Clients from "../../components/Clients/Clients";
 import Activities from "../../components/Activities/Activities";
@@ -44,7 +44,12 @@ const ActivitiesUrls = {
 };
 ---
 
-<Layout footerInfo={footerInfo} headerInfo={"/"}>
+<Layout
+  footerInfo={footerInfo}
+  headerInfo={"/"}
+  description={t("index.Meta_Desc")}
+  title={t("index.Meta_Title")}
+>
   <div class="page page--home">
     <Hero type="home" info={heroInfo} />
     <Overview activitiesAlt={activitiesAlt} />

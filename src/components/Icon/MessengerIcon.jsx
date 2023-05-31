@@ -1,9 +1,9 @@
-import React from "preact";
+// import React from "preact";
 
 const MessengerIcon = () => {
   return (
     <div>
-      <svg
+      {/* <svg
         width="28px"
         height="28px"
         viewBox="0 0 28 28"
@@ -33,7 +33,7 @@ const MessengerIcon = () => {
             </g>
           </g>
         </g>
-      </svg>
+      </svg> */}
     </div>
   );
 };
