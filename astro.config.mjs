@@ -5,8 +5,8 @@ import preact from "@astrojs/preact";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://turn-digital.github.io/",
-  // base: "/artis-astro",
+  site: "https://turn-digital.github.io",
+  base: "/artis-astro",
   integrations: [
     astroI18next(),
     image({
