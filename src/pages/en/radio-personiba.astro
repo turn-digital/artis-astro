@@ -1,7 +1,7 @@
 ---
 import "~styles/style.scss";
 import Layout from "../../components/Layout/Layout";
-import Hero from "../../components/Hero/Hero";
+import Hero from "../../components/Hero/Hero.astro";
 import { t, changeLanguage } from "i18next";
 import ArticleCard from "../../components/ArticleCard/ArticleCard";
 import Button from "../../components/Button/Button";
@@ -31,11 +31,11 @@ const heroInfo = {
     title: t("radio.Radio_Hero_Title"),
     content: t("radio.Radio_Hero_Content"),
     heroTitle: t("radio.Hero_title"),
-    heroPhone: t("radio.Hero_Phone"),
-    heroEmail: t("radio.Hero_Emai"),
-    heroMessengerPageUrl: t("radio.Hero_Messenger_Page_Url"),
+    heroPhone: t("index.Hero_Phone"),
+    heroEmail: t("index.Hero_Emai"),
+    heroMessengerPageUrl: t("index.Hero_Messenger_Page_Url"),
     background: t("radio.Background_Image_Alt"),
-    arrowTitle: t("radio.Arrow_Title"),
+    arrowTitle: t("index.Arrow_Title"),
     homeIconHref: t("index.Home_Icon_Href"),
 };
 const articles = [
