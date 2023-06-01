@@ -8,14 +8,14 @@ const Header = (props) => {
     <div className="language">
       <a
         title="latviešu valoda"
-        href={props.headerInfo}
+        href={`/artis-astro${props.headerInfo}`}
         onClick={() => changeLanguage("lv")}
       >
         Latviešu
       </a>{" "}
       <a
         title="English language"
-        href={`/en${props.headerInfo}`}
+        href={`/artis-astro/en${props.headerInfo}`}
         onClick={() => changeLanguage("en")}
       >
         English
